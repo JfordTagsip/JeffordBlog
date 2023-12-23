@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #aca6a6;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+.slide .item:nth-child(3){
+    left: 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+.glass{
+    width: 930%;
+    height: 520px;
+    box-shadow: 0 0 8px rgb(225, 225, 225,1);
+    background-image: url(grass.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 30px 8%;
+}
+.logo{
+    font-size: 22px;
+    color: hsl(0, 0%, 6%);
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.1s ease-out; 
+}
+nav ul li:hover{
+    border-bottom: 2px solid #ee3939;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #160202;
+    font-weight: bold;
+}
+img{
+    width: 40px;
+    height: 39px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: -8px;
+    transition: 0.1s ease;
+}
+img:hover{
+    border: 2px solid #f15050;
+}
+H3{
+    color: #040b0c;
+    margin: 100px 100px -5px;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+h1{
+    color: #222220;
+    margin: 0 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    letter-spacing: 15px;
+    opacity: 0.9;
+    background-image: repeating-linear-gradient(100deg, #202729,#40656b, #30363d,#26413b, #81d7f1);
+    background-size: 100px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+.icons i{
+    color: #fff;
+}
+.icons{
+    display: flex;
+    margin-top: 80px;
+    margin-right: 50px;
+}
+.icons ul{
+    flex: 1;
+    text-align: right;
+}
+.icons ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+}
+.icons ul li i{
+    text-decoration: none;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.1a all;
+}
+.icons ul li i:hover{
+color: rgb(119, 236, 236);
+}
